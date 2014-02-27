@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable scp': 'scp:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'scp'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'scp:toggle' }
+      ]
+    ]
+  }
+]
